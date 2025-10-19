@@ -4,6 +4,7 @@
   border-radius: 6px;
   overflow: hidden;
   width: 100%;
+  max-width: 500px;
 }
 
 .map-header {
@@ -14,9 +15,16 @@
 
 .map-container {
   width: 100%;
-  height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 0;
+
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    max-height: 300px;
+  }
 }
 
 .popup-content {

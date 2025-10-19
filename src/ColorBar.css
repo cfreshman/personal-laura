@@ -1,0 +1,36 @@
+.color-bar {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  /* border: 1px solid #fff; */
+  /* border-radius: 6px; */
+}
+
+.color-bar-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.color-bar-text {
+  font-family: 'Monofett', monospace;
+  font-size: 3rem;
+  color: #000;
+  white-space: nowrap;
+  translate: 0 -.25rem;
+  letter-spacing: .25rem;
+  /* text-shadow: 
+    1.5px 1.5px 0 #fff,
+    -1.5px -1.5px 0 #fff,
+    1.5px -1.5px 0 #fff,
+    -1.5px 1.5px 0 #fff; */
+}
+

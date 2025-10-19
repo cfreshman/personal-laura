@@ -1,25 +1,27 @@
 #root {
   background-color: #e0e9f0;
-  font-size: 16px;
-  padding: 1rem;
+  background-color: #b9cad0;
+  background-color: #eeebe6;
+  padding: 0;
+  padding-bottom: 1rem;
 
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
 
   overflow: auto;
 }
 
 .header {
   font-size: 1.2em;
-  border-bottom: 1px solid #000;
+  margin: 0;
 }
 
 .content {
   height: 0;
   flex-grow: 1;
   overflow: auto;
-  /* padding-right: 1rem; */
+  margin: 0 1rem;
 
   display: flex;
   flex-direction: column;
@@ -31,8 +33,24 @@
   flex-shrink: 0;
 }
 
+.text-box {
+  padding: .5rem 1rem;
+  background: white;
+  /* border: 1px solid #000; */
+  border-radius: 6px;
+}
+
+.text-box p {
+  margin: 0;
+}
+
+.text-box p + p {
+  margin-top: 0.5rem;
+}
+
 .footer {
   font-size: .8em;
   border-top: 1px solid #000;
   text-align: center;
+  margin: 0 1rem;
 }
