@@ -12,6 +12,7 @@
   min-width: 250px;
   
   overflow: hidden;
+  user-select: none;
 }
 
 .audio-player-inline:hover {
@@ -47,13 +48,13 @@
 .track-title-small {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #333;
+  color: #000;
   line-height: 1.2;
 }
 
 .track-artist-small {
   font-size: 0.625rem;
-  color: #666;
+  color: #555;
   line-height: 1.2;
 }
 

@@ -1,0 +1,35 @@
+.life-map {
+  background: white;
+  border: 1px solid #000;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.map-header {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;  
+}
+
+.map-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.popup-content div {
+  font-size: 0.875rem;
+  color: #666;
+}
+
