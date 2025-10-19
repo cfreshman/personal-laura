@@ -7,7 +7,8 @@ function App() {
       <div className='header'>Laura Tsang</div>
       <div className='content'>
         <p>I'm an urban planner for the state of Massachusetts!</p>
-        
+        <p>In my free time I enjoy tennis, other outdoor activities, and various crafts.</p>
+        <br/>
         <AudioPlayer 
           src="/golden.m4a"
           title="Golden"
