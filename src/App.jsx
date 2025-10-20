@@ -2,12 +2,15 @@ import './App.css'
 import AudioPlayer from './AudioPlayer'
 import LifeMap from './LifeMap'
 import ColorBar from './ColorBar'
+import { useColorGradient } from './useColorGradient'
 
 function App() {
+  const gradient = useColorGradient()
+  
   return (
     <>
       <div className='header'>
-        <ColorBar />
+        <ColorBar gradient={gradient} />
       </div>
       <div className='content'>
         <div className='text-box'>
@@ -24,8 +27,7 @@ function App() {
         {/* <div/> */}
         <LifeMap />
       </div>
-      <div className='footer'>
-        Laura Tsang 2025
+      <div className='footer' style={{ background: gradient }}>
       </div>
     </>
   )

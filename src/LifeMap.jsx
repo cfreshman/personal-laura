@@ -10,7 +10,8 @@ function LifeMap() {
   const locations = [
     { city: 'Newport News, VA', year: 'Born', lat: 37.0871, lng: -76.4730 },
     { city: 'Brick, NJ', year: '2003', lat: 40.0576, lng: -74.1043 },
-    { city: 'Boston, MA', year: 'College', lat: 42.3601, lng: -71.0589 }
+    { city: 'Boston, MA', year: 'College', lat: 42.3601, lng: -71.0589 },
+    { city: 'Providence, RI', year: 'Work', lat: 41.8211751, lng: -71.4136608 },
   ]
 
   const positions = locations.map(loc => [loc.lat, loc.lng])
@@ -24,7 +25,6 @@ function LifeMap() {
         bounds={bounds}
         boundsOptions={{ padding }}
         className='map-container'
-        scrollWheelZoom={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
