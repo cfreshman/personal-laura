@@ -1,0 +1,25 @@
+{
+  "name": "Laura Tsang",
+  "short_name": "Laura Tsang",
+  "description": "Regional planner for the state of Massachusetts. Personal portfolio and work.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eeebe6",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
