@@ -8,15 +8,15 @@ function ImageGallery() {
   // Replace these with your actual images and descriptions
   const items = [
     {
-      src: 'https://p057.co/:jj94f6tujzg5.pdf',
+      src: '/_jj94f6tujzg5.png',
       description: 'Winter flounder habitat model. Made using ArcGIS.'
     },
     {
-      src: 'https://p057.co/:efietg16xepo.pdf',
+      src: '/_efietg16xepo.png',
       description: 'Artistic land use map of San Antonio, TX. Made using QGIS and Adobe Illustrator'
     },
     {
-      src: 'https://p057.co/:ggzcpho4yhm0.pdf',
+      src: '/_ggzcpho4yhm0.png',
       description: 'Suitable nesting habitat for M. terrapin in New Jersey. Made using ArcGIS.'
     },
   ]
