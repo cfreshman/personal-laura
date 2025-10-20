@@ -36,12 +36,12 @@
 
 .gallery-item {
   flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
+  display: table;
   gap: 0.5rem;
-  align-items: flex-start;
   cursor: pointer;
   transition: opacity 0.2s;
+  border-spacing: 0;
+  min-width: 250px;
 }
 
 .gallery-item:hover {
@@ -53,7 +53,7 @@
   width: auto;
   object-fit: cover;
   border-radius: 4px;
-  display: block;
+  display: table-row;
 }
 
 .gallery-pdf {
@@ -61,7 +61,7 @@
   width: 350px;
   /* border-radius: 4px; */
   border: none;
-  display: block;
+  display: table-row;
   pointer-events: none;
 }
 
@@ -69,11 +69,12 @@
   font-size: 0.875rem;
   color: #333;
   margin: 0;
-  width: 100%;
-  max-width: 350px;
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 0.5rem;
 }
 
 /* Modal */
