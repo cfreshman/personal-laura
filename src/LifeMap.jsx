@@ -30,7 +30,7 @@ function LifeMap() {
 
   return (
     <div className='life-map'>
-      <div className='map-header'>Map of My Life</div>
+      {/* <div className='map-header'>Where I've lived</div> */}
       <MapContainer 
         bounds={bounds}
         boundsOptions={{ padding }}

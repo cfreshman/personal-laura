@@ -19,6 +19,7 @@ function App() {
           <p>I'm a regional planner for the state of Massachusetts!</p>
           <p>In my free time I enjoy tennis, other outdoor activities, and various crafts.</p>
         </div>
+        <div/>
         <Contact />
         <AudioPlayer 
           src="/golden.m4a"
@@ -26,7 +27,15 @@ function App() {
           artist="HUNTR/X"
           albumArt="/golden.jpeg"
         />
+        <div/>
+        <div className='text-box'>
+          <p>Artifacts</p>
+        </div>
         <ImageGallery />
+        <div/>
+        <div className='text-box'>
+          <p>Where I've lived</p>
+        </div>
         <LifeMap />
       </div>
       <div className='footer' style={{ background: gradient }}>

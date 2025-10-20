@@ -7,11 +7,38 @@
   -moz-osx-font-smoothing: grayscale;
 
   font-size: 16px;
+
+  /* Design tokens */
+  --border-radius: 6px;
+  --border-radius-scrollbar: 4px;
+  --border-radius-circle: 50%;
+  
+  --color-border: #000;
+  --color-border-light: #ddd;
+  --color-bg: #eeebe6;
+  --color-bg: #d7d3cd;
+  --color-bg-white: white;
+  --color-bg-gray: #f0f0f0;
+  --color-bg-hover: #f9f9f9;
+  --color-bg-faded-white: #fff8;
+  --color-border-faded: #0004;
+  
+  --color-text: #333;
+  --color-text-light: #666;
+  
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+
+  --shadow-card: 0 1px 2px 1px var(--color-border-faded);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+  background-clip: border-box;
 }
 
 a {
