@@ -23,7 +23,7 @@ export const useColorGradient = () => {
       )
       
       lastHue = hue
-      return `hsl(${hue}, 100%, 80%)`
+      return `hsl(${hue}, 100%, 75%)`
     })
     
     // Create hard edges by having each color stop twice
