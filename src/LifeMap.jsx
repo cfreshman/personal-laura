@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, CircleMarker, Popup, Polyline } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { useIsMobile } from './utils'
@@ -18,9 +18,19 @@ function LifeMap() {
   const bounds = L.latLngBounds(positions)
   const padding = isMobile ? [10, 10] : [30, 30]
 
+  // Create custom numbered icons
+  const createNumberedIcon = (number) => {
+    return L.divIcon({
+      className: 'numbered-marker',
+      html: `<div class="marker-circle">${number}</div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12],
+    })
+  }
+
   return (
     <div className='life-map'>
-      <div className='map-header'>Map of my life</div>
+      <div className='map-header'>Map of My Life</div>
       <MapContainer 
         bounds={bounds}
         boundsOptions={{ padding }}
@@ -34,16 +44,10 @@ function LifeMap() {
         <Polyline positions={positions} color="black" dashArray="5, 10" weight={2} />
         
         {locations.map((location, index) => (
-          <CircleMarker 
+          <Marker 
             key={index} 
-            center={[location.lat, location.lng]}
-            radius={8}
-            pathOptions={{ 
-              fillColor: 'black', 
-              fillOpacity: 1, 
-              color: 'black',
-              weight: 2 
-            }}
+            position={[location.lat, location.lng]}
+            icon={createNumberedIcon(index + 1)}
           >
             <Popup>
               <div className='popup-content'>
@@ -51,7 +55,7 @@ function LifeMap() {
                 <div>{location.year}</div>
               </div>
             </Popup>
-          </CircleMarker>
+          </Marker>
         ))}
       </MapContainer>
     </div>

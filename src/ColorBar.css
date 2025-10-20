@@ -15,17 +15,18 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   pointer-events: none;
+  padding: 0 1rem;
 }
 
 .color-bar-text {
   font-family: 'Monofett', monospace;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #000;
   white-space: nowrap;
-  translate: 0 -.25rem;
-  letter-spacing: .25rem;
+  translate: 0 -.3rem;
+  /* letter-spacing: .25rem; */
   /* text-shadow: 
     1.5px 1.5px 0 #fff,
     -1.5px -1.5px 0 #fff,

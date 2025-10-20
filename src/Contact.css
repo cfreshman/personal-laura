@@ -1,0 +1,37 @@
+.contact {
+  background: white;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.contact:hover {
+  background: #f5f5f5;
+}
+
+.contact:active {
+  background: #e8e8e8;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-email {
+  color: #000;
+  display: inline-flex;
+}
+
+.copy-icon {
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+

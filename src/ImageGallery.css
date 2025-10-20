@@ -1,0 +1,135 @@
+.image-gallery {
+  max-width: 100%;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: .5rem;
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+.gallery-item {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gallery-item:hover {
+  opacity: 0.8;
+}
+
+.gallery-image {
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.gallery-pdf {
+  height: 250px;
+  width: 350px;
+  /* border-radius: 4px; */
+  border: none;
+  display: block;
+  pointer-events: none;
+}
+
+.gallery-description {
+  font-size: 0.875rem;
+  color: #333;
+  margin: 0;
+  width: 100%;
+  max-width: 350px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Modal */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  gap: 1rem;
+}
+
+.modal-close {
+  background: white;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.modal-close:hover {
+  background: #f0f0f0;
+}
+
+.modal-content {
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem - 40px - 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-pdf {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  background: white;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
