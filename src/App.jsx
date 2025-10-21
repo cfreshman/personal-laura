@@ -37,6 +37,13 @@ function App() {
           <p>Where I've lived</p>
         </div>
         <LifeMap />
+        <div/>
+        <div className='text-box'>
+          <p>Thanks for viewing!</p>
+        </div>
+        <div className='thanks-section'>
+          <img src="/icon.png" alt="icon" className='thanks-icon' />
+        </div>
       </div>
       <div className='footer' style={{ background: gradient }}>
       </div>
