@@ -5,9 +5,21 @@ import ColorBar from './ColorBar'
 import ImageGallery from './ImageGallery'
 import Contact from './Contact'
 import { useColorGradient } from './useColorGradient'
+import { useEffect } from 'react'
 
 function App() {
   const gradient = useColorGradient()
+  
+  useEffect(() => {
+    const handleMessage = (e) => {
+      if (e.origin === 'https://embed.gallery' && e.data.type === 'navigate') {
+        window.location.href = e.data.url
+      }
+    }
+    
+    window.addEventListener('message', handleMessage)
+    return () => window.removeEventListener('message', handleMessage)
+  }, [])
   
   return (
     <>
@@ -43,6 +55,15 @@ function App() {
         </div>
         <div className='thanks-section'>
           <img src="/icon.png" alt="icon" className='thanks-icon' />
+        </div>
+        <div className='webring-container'>
+          <iframe 
+            src="https://embed.gallery/insert/68fd358cbe543d9db3af8d28" 
+            width="300" 
+            height="80" 
+            frameBorder="0"
+            title="webring"
+          />
         </div>
       </div>
       <div className='footer' style={{ background: gradient }}>

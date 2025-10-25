@@ -58,6 +58,21 @@
   object-fit: contain;
 }
 
+.webring-container {
+  background: var(--color-bg-faded-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.webring-container iframe {
+  border: none;
+}
+
 .footer {
   border-top: 1px solid var(--color-border);
   height: var(--spacing-lg);
